@@ -2,10 +2,20 @@
 const loginBtn = document.getElementById('loginBtn');
 loginBtn.addEventListener('click',function(){
     // console.log("yes");
+    const emailInput = document.getElementById('emailInput').value;
+    const passwordInput = document.getElementById('passwordInput').value;
+    if(emailInput == "" ){
+        alert("Please enter valid email");
+        
+    }else if( passwordInput == ""){
+        alert("Please enter valid password")
+    }else
+    {
     const loginArea = document.getElementById('login-area');
     loginArea.style.display = 'none';
     const transactionArea = document.getElementById('transaction-area');
     transactionArea.style.display = 'block';
+}
 });
 //deposit button event handler
 const depositBtn = document.getElementById('depositBtn');
