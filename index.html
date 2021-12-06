@@ -15,8 +15,8 @@
      <!-- login start -->
     <section class="login ">
         <div class="container-lg py-4">
-            <div class="row min-vh-100 align-items-center justify-content-center">
-                <div class="col-lg-8">
+            <div class="row ">
+                <div class="col-lg-8 offset-2">
                     <div id="login-area" class="login-area p-5 ">
                         <h2 class="fw-bold text-center mb-4">Welcome to Pioneer bank</h2>
                         <div class="submit-area shadow p-4 mb-5 bg-body rounded ">
@@ -32,10 +32,45 @@
     </section>
      <!-- login end -->
      <!-- transition start -->
-     <section id="transition-area" class="transition-area">
+     <section id="transaction-area" class="transaction-area">
          <div class="container">
-             <div class="row">
-                 <h4>Transition</h4>
+             <div id="transaction" class="transaction">
+                 <div class="row mb-5">
+                     <div class="col-md-4">
+                         <div class="deposit bg-primary bg-gradient text-white p-4 w-75 mb-3 rounded">
+                             <h5>Deposit</h5>
+                             <h2>$ <span id="currentDeposit">00</span></h2>
+                         </div>
+                     </div>
+                     <div class="col-md-4">
+                         <div class="withdraw bg-danger bg-gradient bg-gradient text-white p-4 w-75 mb-3 rounded">
+                             <h5>Withdraw</h5> 
+                             <h2>$ <span id="currentWithdraw">00</span></h2>
+                         </div>
+                     </div>
+                     <div class="col-md-4">
+                         <div class="balance bg-warning bg-gradient bg-gradient text-white p-4 w-75 mb-3 rounded">
+                             <h5>Balance</h5>
+                             <h2>$ <span id="currentBalance">1240</span></h2>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-md-6">
+                         <div class="deposit-amount shadow p-3 mb-5 bg-body rounded">
+                             <h4>Deposit</h4>
+                             <input type="text" id="depositAmount" class="form-control mb-3" placeholder="$ amount you want to deposit">
+                             <button id="depositBtn" class="btn btn-success depositBtn">Deposit</button>
+                         </div>
+                     </div>
+                     <div class="col-md-6">
+                         <div class="withdraw-amount shadow p-3 mb-5 bg-body rounded">
+                             <h4>Withdraw</h4>
+                             <input type="text" id="withdrawAmount" class="form-control mb-3" placeholder="$ amount you want to withdraw">
+                             <button id="withdrawBtn" class="btn btn-success withdrawBtn">Withdraw</button>
+                         </div>
+                     </div>
+                 </div>
              </div>
          </div>
      </section>

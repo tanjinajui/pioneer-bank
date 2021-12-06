@@ -1,3 +1,7 @@
 /* body{
     padding: 100px;
 } */
+.transaction-area{
+    display: none;
+    /* margin-top: -372px; */
+}
